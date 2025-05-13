@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+	    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="/w3css/3/w3.css">
+<nav class="navbar">
+<ul class="nav-links">
+<li> <a href="bonga.html" class="w3-button w3-bar-item">Home</a> </li>
+  <li><a href="form.html" class="w3-button w3-bar-item">Bookings</a></li>
+ <li> <a href="Projects.html" class="w3-button w3-bar-item">Projects</a></li>
+  </ul>
+</nav>
+</head>
+<body>
+
+    
+    <form action="submit_form.php" method="POST">
+        <!-- Name field -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name"><br><br>
+        
+        <!-- Email field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email"><br><br>
+		
+		<!-- Cell field -->
+        <label for="Cell">Cell:</label>
+        <input type="cell" id="cell" name="cell" required placeholder="Enter your cell no"><br><br>
+        
+        <!-- Message field -->
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required placeholder="Enter your message"></textarea><br><br>
+        
+        <!-- Submit button -->
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
